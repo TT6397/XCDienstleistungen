@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Garten-Landschaftsbau</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-headerImpressum">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="dienste.html">DIENSTLEISTUNGEN</a></li>
+                        <li><a href="about.html">ÜBER UNS</a></li>
+                        <li><a href="contact.html">KONTAKT</a></li>
+                        <li><a href="">IMPRESSUM</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Impressum</h1>
+        </section>
+
+        <section class="impressum">
+            <div>
+                <i class="fa fa-user"></i>
+                <span>
+                    <h5>X.C. Dienstleistungen UG</h5>
+                    <p>Geschäftsführer: Mazlum Yildiz</p>
+                    <p>Inhaber: Mazlum Yildiz</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Anschrift</h5>
+                    <p>Adresse: Rheingönheimer Str. 56</p>
+                    <p>PLZ/Ort: 67065 Ludwigshafen am Rhein</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>Telefonnummer</h5>
+                    <p>Telefon: +XXXXXXXXXX</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>Email</h5>
+                    <p>Email: info@xcdienstleistungen.de</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-balance-scale"></i>
+                <span>
+                    <h5>Registernummer</h5>
+                    <p>Registernummer: HRB 66124</p>
+                    <h5>Registergericht</h5>
+                    <p>Registergericht: Amtsgericht Ludwigshafen am Rhein</p>
+                    <h5>Umsatzsteuer-Identifikationsnummer</h5>
+                    <p>USt.-ID-Nr: DE-XXXX</p>
+                </span>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+            <p>Copyright 2021 | X.C. Dienstleistungen UG</p>
+        </section>
+
+        <script type="text/javascript">
+            var navLinks = document.getElementById("navLinks");
+            var counter = 1;
+    
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

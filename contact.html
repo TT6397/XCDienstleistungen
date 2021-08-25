@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Garten-Landschaftsbau</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-headerContact">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="dienste.html">DIENSTLEISTUNGEN</a></li>
+                        <li><a href="about.html">ÜBER UNS</a></li>
+                        <li><a href="">KONTAKT</a></li>
+                        <li><a href="impressum.html">IMPRESSUM</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Kontakt</h1>
+        </section>
+
+        <section class="contact-us">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Rheingönheimer Str. 56</h5>
+                    <p>67065 Ludwigshafen am Rhein</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+XXXXXXXXXX</h5>
+                    <p>Montag bis Freitag, 10.00 Uhr - 18.00Uhr</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@xcdienstleistungen.de</h5>
+                    <p>Senden Sie uns ihre Anfrage</p>
+                </span>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+            <p>Copyright 2021 | X.C. Dienstleistungen UG</p>
+            <a href="impressum.html">Impressum</a>
+        </section>
+
+        <script type="text/javascript">
+            var navLinks = document.getElementById("navLinks");
+            var counter = 1;
+    
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
